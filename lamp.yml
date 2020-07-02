@@ -3,3 +3,18 @@
 host: localhost
 connection: ssh
 tasks:
+
+name: install httpd
+yum:
+
+name: httpd
+state: present
+
+name: install tomcat
+status: tomcat started
+
+name: install apache
+status: apache started
+
+name: install fuse
+status: fuse started
